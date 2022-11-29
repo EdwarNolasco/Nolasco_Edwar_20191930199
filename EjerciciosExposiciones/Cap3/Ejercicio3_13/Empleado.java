@@ -7,45 +7,45 @@ salario anual de cada objeto. Después, proporcione a cada Empleado un aumento d
 de cada Empleado otra vez. */
 
 public class Empleado {
-	
+
 	private String primNom;
 	private String apePat;
 	private double salMen;
-	
-	public Empleado(){
+
+	public Empleado() {
 		this.primNom = "John";
-	    this.apePat = "Doe";
+		this.apePat = "Doe";
 		this.salMen = 0.0;
 	}
-	
-	public void establecerPrimNom(String primNom){
+
+	public void establecerPrimNom(String primNom) {
 		this.primNom = primNom;
 	}
-	
-	public String obtenerPrimNom(){
+
+	public String obtenerPrimNom() {
 		return primNom;
 	}
-	
-	public void establecerApePat(String apePat){
+
+	public void establecerApePat(String apePat) {
 		this.apePat = apePat;
 	}
-	
-	public String obtenerApePat(){
+
+	public String obtenerApePat() {
 		return apePat;
 	}
 
-	public void establecerSalMen(double salMen){
-		if(salMen > 0)
-		this.salMen = salMen;
+	public void establecerSalMen(double salMen) {
+		if (salMen > 0)
+			this.salMen = salMen;
 	}
-	
-	public double obtenerSalMen(){
+
+	public double obtenerSalMen() {
 		return salMen;
 	}
-	
-	public void obtenerDatosEmpleado(){
-		System.out.println("Primer Nombre: " + primNom + 
-						   "\nApellido Paterno: " + apePat + 
-						   "\nSalario mensual: $" + salMen);
+
+	public void obtenerDatosEmpleado() {
+		System.out.println("Primer Nombre: " + primNom +
+				"\nApellido Paterno: " + apePat +
+				"\nSalario mensual: $" + salMen);
 	}
 }

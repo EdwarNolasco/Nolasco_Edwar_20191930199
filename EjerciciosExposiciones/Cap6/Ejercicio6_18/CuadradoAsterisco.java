@@ -9,31 +9,31 @@ Incorpore este método a una aplicación que lea un valor entero para el paráme
 despliegue los asteriscos con el método cuadradoDeAsteriscos. */
 
 import java.util.Scanner;
- 
+
 public class CuadradoAsterisco {
-   
+
     Scanner teclado = new Scanner(System.in);
-   
+
     int n;
-   
+
     public void entradato() {
         System.out.print("Por favor ingrese lado del cuadrado: ");
         n = teclado.nextInt();
     }
-   
+
     public void proceso() {
-        if(n >= 2 && n <= 50) {
+        if (n >= 2 && n <= 50) {
             for (int i = 1; i <= n; i++) {
                 for (int j = 1; j <= n; j++) {
                     System.out.print(" *");
                 }
                 System.out.println("");
             }
-        }else {
+        } else {
             System.out.println("Por favor ingrese un numero entre 2 y 50");
         }
     }
-   
+
     public static void main(String[] args) {
         CuadradoAsterisco fc = new CuadradoAsterisco();
         fc.entradato();
